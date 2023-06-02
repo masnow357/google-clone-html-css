@@ -1,5 +1,4 @@
 body {
-	font-family: "Google Sans","Noto Sans Myanmar UI",arial,sans-serif;
 	background: #fff;
 	color: #202124;
 	justify-content: center;
@@ -31,11 +30,13 @@ a{
 #login-main{
 	height: auto;
 	margin-top: 48px;
-
+	max-width: 95%;
+	min-width: 320px;
 }
 
 #login-main section{
-	width: 448px;
+	width: 100%;
+	max-width: 448px;
 	height: 500px;
 	display: flex;
 	flex-direction: column;
@@ -48,55 +49,60 @@ section svg{
 	margin-top: 48px;
 }
 
-section > div{
+section p{
+	font-size: 14px;
+}
+
+section > form{
 	display: flex;
 	flex-direction: column;
 	align-items: start;
 	padding: 0 40px;
+	width: auto;
 }
 
-section > div > a{
+section > form > a{
 	font-size: 14px;
 	font-weight: bold;
 	margin-top: 8px;
 }
 
-section > div > p{
+section > form > p{
 	margin-top: 45px;
 }
 
-section > div > p > a{
+section > form > p > a{
 	font-weight: bold;
 }
 
-section > div > div{
+section > form > div{
 	margin-top: 40px;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 }
 
-section > div > div > button{
+section > form > div > button{
 	background-color: transparent;
 	border: none;
 	width: 110px;
 	transition: all .3s;
 }
 
-section > div > div > button:hover{
+section > form > div > button:hover{
 	background-color: #90bcec24;
 }
 
-section > div > div > button:nth-child(1){
+section > form > div > button:nth-child(1){
 	color: #1a73e8;
 }
 
-section > div > div > button:nth-child(2){
+section > form > div > button:nth-child(2){
 	background-color: #1a73e8;
 	color: #fff;
 }
 
-section > div > div > button:nth-child(2) > a{
+section > form > div > button:nth-child(2) > a{
 	font-weight: bold;
 	color: #fff;
 }
@@ -106,8 +112,8 @@ section > div > div > button:nth-child(2) > a{
 }
 
 main input{
-	/*padding: 15px 13px;*/
-	width: 368px;
+	width: 100%;
+	max-width: 368px;
 	height: 56px;
 	border-radius: 4px;
 	background-color: transparent;
@@ -128,34 +134,27 @@ main input:hover{
 footer{
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap-reverse;
 }
 
 footer > div{
-	padding: 15px 30px;
 	border-bottom: none;
 	font-size: 12px;
-	color: #3c4043;
 	background-color: transparent;
+	display: flex;
+	gap: 25px;
+	padding: 20px 0 0 0;
+	color: #000;
+}
+
+
+footer div a{
+	color: #3c4043;
 }
 
 footer > div > div{
 	display: flex;
 	gap: 30px;
-}
-
-section p{
-	font-size: 14px;
-}
-
-footer > div{
-	display: flex;
-	gap: 25px;
-	padding: 20px 0;
-	color: #000;
-}
-
-footer div a{
-	color: #3c4043;
 }
 
 footer > div > select{
